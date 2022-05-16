@@ -4,22 +4,23 @@
 ## 2 把下面代码复制到 ~/.vimrc，如果没有这个文件创建一个
 
 ```bash
-# for vim itselft
+" for vim itselft
 set number
 set nobackup
 set tabstop=4
 set autoindent
 set fileencodings=utf-8,gbk,big5
 
-# for pathogen(vim plugin manager)
+" for pathogen(vim plugin manager)
 call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-# for nerdtree
+" for nerdtree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd BufWinEnter * silent NERDTreeMirror
+
 ```
 
 ## 3 插件说明
