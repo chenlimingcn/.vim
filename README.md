@@ -8,6 +8,8 @@
 set number
 set nobackup
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set autoindent
 set fileencodings=utf-8,gbk,big5
 
